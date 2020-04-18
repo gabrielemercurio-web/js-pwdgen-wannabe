@@ -15,9 +15,15 @@ var data_corrente = new Date();
 var anno_corrente = data_corrente.getFullYear();
 console.log(anno_corrente);
 
-// Avviso all'utente sulla procedura per generare le Password
-alert('Ciao ' + nome_utente + ', di seguito ti verrà consegnata la password per accedere al sito.');
-console.log(alert);
+document.getElementById('nome').innerHTML = nome_utente;
+document.getElementById('password').innerHTML = nome_utente + cognome_utente + colore_preferito + anno_corrente;
+document.getElementById('generazione-password').setAttribute('class', 'visible');
 
-// Generazione della password
-document.writeln('La tua password è: ' + nome_utente + cognome_utente + colore_preferito + anno_corrente);
+/*
+    // Avviso all'utente sulla procedura per generare le Password
+    alert('Ciao ' + nome_utente + ', di seguito ti verrà consegnata la password per accedere al sito.');
+    console.log(alert);
+
+    // Generazione della password
+    document.writeln('La tua password è: ' + nome_utente + cognome_utente + colore_preferito + anno_corrente);
+*/
